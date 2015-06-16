@@ -1,0 +1,157 @@
+@import "../bootstrap/bootstrap.less";
+
+/*  font styles  */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,700|Rosario:400,700);
+
+@my-font-family: 'Roboto', sans-serif;
+.my-font-family {
+     &.light {
+          font-family: "Roboto",sans-serif;
+          font-weight: 100;
+     }
+     &.regular {
+          font-family: "Roboto",sans-serif;
+          font-weight: 400;
+     }
+     &.bold {
+          font-family: "Roboto",sans-serif;
+          font-weight: 700;
+     }
+}
+
+/*  colors  */
+@linkcolor:yellow;
+@basefontcolor:white;
+@backgroundcolor:#ddd;
+@maincolor:#aabbbf;
+@contentcolor:#66aabb;
+@blockcolor:#225588;
+@containercolor:#5588ff;
+@accent1:#339966;
+@accent2:#FFCC00;
+
+/*  font/spacing sizes  */
+
+/*  sizing  */
+/*  mixins  */
+.text-shadow (@string: -1px 2px 3px rgba(0, 0, 0, 1)) {
+    text-shadow: @string;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    color: @basefontcolor;
+    background-color: @backgroundcolor;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#page {
+    margin: 0 auto;
+    overflow:auto;
+    background-color:@maincolor;
+    padding:3%;
+}
+#container {
+    background-color:@containercolor;
+}
+
+strong {
+    color: @basefontcolor;
+}
+
+a {
+    color: @linkcolor;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+#title {
+    background-image: url({{ media_url('img/background.jpg') }});
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+    height:20em;
+    .my-font-family .bold;
+    text-transform: uppercase;
+}
+#title h1 {
+    font-size:4em;
+}
+
+#title p {
+    font-size: 2em;
+}
+.logo{
+    width:100%;
+    padding:2%;
+}
+
+nav a,
+nav a:visited {
+    text-decoration: none;
+    color: @basefontcolor;
+    text-transform: uppercase;
+}
+
+nav a.selected {
+    color: @accent1;
+    .my-font-family .bold;
+}
+
+nav a:hover {
+    color: @accent2;
+}
+
+#content {
+    background-color:@contentcolor;
+    line-height: 1.5em;
+}
+
+#sidebar {
+    bakground-color:white;
+}
+
+#content h1 {
+    text-transform: uppercase;
+    color: @basefontcolor;
+}
+
+.tag{
+  .navbar-brand;
+  font-size:1.7em;
+  color: @accent2;
+}
+
+.my_navbar{
+  .navbar; 
+  .navbar-inverse;
+}
+
+#nav_container {
+  margin-left:0em;
+  margin-right:0em;
+  width:100%;
+  background-color:@blockcolor;
+
+}
+
+.navbar_toggle{
+  .navbar-toggle;
+  .navbar-inverse;
+}
+
+.navbar_toggle .icon-bar{
+  background-color:white;
+}

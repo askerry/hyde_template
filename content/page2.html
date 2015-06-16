@@ -1,0 +1,21 @@
+---
+extends: base.j2
+title: About
+default_block: content
+---
+
+About
+=====
+
+Cum sociis natoque penatibus et magnis dis parturient montes [Amy Skerry][0] lip barut. Nunc arcu nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus [{{layout.name}}][1], sed accumsan non, feugiat a lacus.
+
+
+Quisque bibendum ex velit, id facilisis ante ultrices sit amet. Praesent vel luctus nisi, sit amet cursus dolor. Suspendisse mattis dui nunc, a mollis magna scelerisque non. Ut nec est lectus. Fusce vitae gravida sapien. Suspendisse imperdiet ex sapien, non cursus purus cursus eget [layout][2].
+
+
+{# You can use Jinja tags in Markdown content also; they get processed
+   before the content gets to the Markdown filter.
+#}
+[0]: {{ author.url }}
+[1]: {{ layout.url }}
+[2]: {{ layout.url }}

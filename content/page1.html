@@ -1,0 +1,49 @@
+---
+extends: base.j2
+title: Page Title
+---
+{# In-file metadata. Supplements data from the site's configuration file 
+   and node (folder) level data in "meta.yaml" files.
+
+   Use the AutoExtendPlugin to extend templates from metadata. In this
+   case the metadata and "extends" statement has to be on the top of the
+   file.
+#}
+
+{% block content %}
+Big Heading
+==================================
+
+Suspendisse ornare odio a eros tristique, quis sollicitudin sapien sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc arcu nulla, suscipit sed accumsan non, feugiat a lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+
+Vestibulum enim ex, fringilla eget ultricies a, ultrices sit amet justo. Quisque bibendum ex velit, id facilisis ante ultrices sit amet. Praesent vel luctus nisi, sit amet cursus dolor. Suspendisse mattis dui nunc, a mollis magna scelerisque non. Ut nec est lectus. Fusce vitae gravida sapien. Suspendisse imperdiet ex sapien, non cursus purus cursus eget. Suspendisse aliquet tristique congue [alink][link1].
+
+
+1. Subheading1
+--------------------
+
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc arcu nulla, suscipit sed accumsan non, feugiat a lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur **ridiculus** mus. 
+
+ Vestibulum enim ex, fringilla eget ultricies a, ultrices sit amet justo. Quisque bibendum ex velit, id facilisis ante ultrices sit amet. Praesent vel luctus nisi, sit amet cursus **dolor**. Suspendisse mattis dui nunc, a mollis magna scelerisque non. Ut nec est lectus. Fusce vitae gravida sapien. Suspendisse imperdiet ex sapien, non cursus purus cursus eget. Suspendisse aliquet tristique congue.
+
+
+2. Subheading2
+------------------
+
+Cras justo *tellus*, egestas eget vulputate in, consequat iaculis tellus. [google.com][link2].
+
+
+3. Subheading3
+----------
+
+[home](index.html) Cras congue mollis sodales. Quisque dapibus, leo non fermentum venenatis, nisi ligula scelerisque nisi, sit amet mattis leo ipsum non ante.
+
+[page 1](page1.html) Maecenas et eros efficitur, pellentesque dui et, faucibus felis. Phasellus non urna justo.
+
+[page 2](page2.html) Vestibulum **elementum** sapien magna, nec pellentesque ligula consequat quis. Cras rutrum mattis ipsum, at eleifend dui vehicula id.
+
+
+[link1]: http://www.facebook.com "facebook"
+[link2]: http://www.google.com "google"
+
+{% endblock %}

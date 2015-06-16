@@ -1,0 +1,20 @@
+{# Use base.j2 template as a base and only provide values for placeholders
+   in this file.
+#}
+{% extends "base.j2" %}
+
+{# Markdown main content block. #}
+{% block content %}
+Introduction to my site
+======================
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et tortor dictum, interdum mi sit amet, ultrices sapien. Praesent nec enim iaculis, hendrerit metus vitae, consequat odio. Vivamus ut rhoncus nisi. Nunc et eros lacus. Praesent consectetur libero sed sapien porttitor tempor. Pellentesque porttitor vehicula mauris, et commodo massa placerat ut. Sed consectetur arcu nec sollicitudin sollicitudin:
+
+  * Sed a nunc magna
+  * Cras justo tellus
+  * vulputate neque nibh
+  * Cras justo tellus
+  * Sed a nunc magna
+
+Nunc et eros lacus [first steps](first-steps.html)?
+{% endblock %}
